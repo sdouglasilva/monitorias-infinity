@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Um layout de galeria de fotos onde uma foto principal ocupa mais espaço.</h1>
+</body>
+<div class="gallery">
+  <div class="photo large">Foto 1</div>
+  <div class="photo small">Foto 2</div>
+  <div class="photo small">Foto 3</div>
+</div>
+<style>
+  .gallery {
+  display: flex;
+}
+.photo {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.large {
+  flex-grow: 2;
+}
+.small {
+  flex-grow: 1;
+}
+
+</style>
+
+</html>

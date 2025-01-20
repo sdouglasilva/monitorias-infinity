@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Colunas</title>
+</head>
+
+<body>
+  <h1>Grid de 3 colunas</h1>
+  <div class="container">
+    <div id="item" class="item1">Item 1</div>
+    <div id="item" class="item2">Item 2</div>
+    <div id="item" class="item3">Item 3</div>
+    <div id="item" class="item4">Item 4</div>
+    <div id="item" class="item5">Item 5</div>
+    <div id="item" class="item6">Item 6</div>
+  </div>
+  <style>
+        * {
+      background-color: rgba(0, 0, 0, 0.781);
+      color: aliceblue;
+
+      h1,
+      h2,
+      h3 {
+        font-family: monospace;
+        color: rgba(176, 184, 111, 0.87);
+        box-shadow: 2px #fafafa;
+      }
+    }
+    .item1 {
+      background-color: brown;
+    }
+    .item2 {
+      background-color: blueviolet;
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+    }
+    .item3 {
+      background-color: rgb(255, 251, 1);
+    }
+    .item4 {
+      background-color: rgb(54, 42, 165);
+    }
+    .item5 {
+      background-color: rgb(147, 165, 42);
+    }
+    .item6 {
+      background-color: aquamarine;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  </style>
+
+</body>
+
+</html>

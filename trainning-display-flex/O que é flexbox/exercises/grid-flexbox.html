@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Um grid de cards de produtos em uma loja online.</h1>
+  <div class="product-grid">
+    <div class="product-card">Produto 1</div>
+    <div class="product-card">Produto 2</div>
+    <div class="product-card">Produto 3</div>
+  </div>
+
+  <p>flex-grow: 1
+    Este valor define a capacidade de crescimento do item, ou seja, quanto espaço extra o item deve ocupar no contêiner flexível.
+    
+    1 indica que o item pode crescer para ocupar o espaço disponível proporcionalmente em relação aos outros itens flexíveis.
+    Se todos os itens dentro do contêiner tiverem flex-grow de 1, eles dividirão igualmente o espaço extra.
+    flex-shrink: 1
+    Este valor determina a capacidade do item de encolher quando o contêiner é menor que a soma das larguras dos itens.
+    
+    1 significa que o item pode encolher, se necessário, para caber no espaço disponível.
+    Se todos os itens dentro do contêiner tiverem flex-shrink de 1, eles encolherão proporcionalmente ao seu tamanho quando não houver espaço suficiente.
+    flex-basis: 200px
+    Este valor define o tamanho base inicial do item antes de ele crescer ou encolher.
+    
+    200px indica que o tamanho inicial do item .product-card deve ser de 200 pixels.
+    Esse valor serve como ponto de referência para flex-grow e flex-shrink.</p>
+  <style>
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      flex: 1 1 200px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+  </style>
+
+</body>
+
+</html>

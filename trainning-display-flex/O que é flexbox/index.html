@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+</head>
+
+<body>
+  <section class="container">
+    <article class="item 1">
+      Caixa 1
+    </article>
+    <article class="item 2">
+      Caixa 2
+    </article>
+    <article class="item 3">
+      Caixa 3
+    </article>
+  </section>
+  <style>
+    .container {
+      background-color: brown;
+      /* ! */
+      height: 500px; 
+      display: flex;
+      flex-direction: row;
+      /* column | row-reverse | column-reverse */
+      flex-wrap: nowrap;
+      /* wrap | wrap-reverse  */
+      flex-flow: row wrap-reverse;
+
+      justify-content: flex-start;
+      /* Faz um alinhamento horizontal, propriedades = flex-end | center | space-between | space around*/
+      align-items: stretch ;
+      /* Faz um alinhamento vertical, o stretch, valor padrão define que os items cresçam igualmente.  =  flex-start | flex-end | center | baseline*/
+      align-content: stretch ;
+      /* Faz alinhamento vertical quando os itens estiverem em quebra = flex-start | flex-end | center | space-between | space-around*/
+
+    }
+
+    .item {
+      background-color: black;
+      color: #fafafa;
+      padding: 20px;
+      margin: 5px;
+      width: 100%;
+    }
+
+  </style>
+
+</body>
+
+</html>

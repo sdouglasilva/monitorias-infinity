@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3 - Flex Basis</title>
+  <H1>flex-basis: Estabelece o tamanho base inicial do item antes de aplicar flex-grow ou flex-shrink.</H1>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid #333;
+      padding: 10px;
+      width: 600px;
+      /* Defina uma largura para o contêiner */
+    }
+
+    .item {
+      background-color: #ffcc00;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+    }
+
+    .item:nth-child(1) {
+      flex-basis: 100px;
+    }
+
+    .item:nth-child(2) {
+      flex-basis: 200px;
+    }
+
+    .item:nth-child(3) {
+      flex-basis: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+
+</html>

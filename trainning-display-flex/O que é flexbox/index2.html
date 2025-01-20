@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <article class="item article-01">
+      Caixa 1
+    </article>
+    <article class="item article-02">
+      Caixa 2
+    </article>
+    <article class="item article-03">
+      Caixa 3
+    </article>
+    <article class="item article-04">
+      Caixa 4
+    </article>
+    <article class="item article-05">
+      Caixa 5
+    </article>
+    <article class="item article-06">
+      Caixa 6
+    </article>
+  </section>
+
+
+
+  <style>
+    .container {
+      background-color: brown;
+      height: 500px;
+      display: flex;
+      /* column | row-reverse | column-reverse */
+      /* wrap | wrap-reverse  */
+      flex-flow: row wrap;
+      /* flex: 1 2 200px; */
+
+      justify-content: flex-start;
+      /* Faz um alinhamento horizontal, propriedades = flex-end | center | space-between | space around*/
+      align-items: stretch;
+      /* Faz um alinhamento vertical, o stretch, valor padrão define que os items cresçam igualmente.  =  flex-start | flex-end | center | baseline*/
+      align-content: stretch;
+      /* Faz alinhamento vertical quando os itens estiverem em quebra = flex-start | flex-end | center | space-between | space-around*/
+
+    }
+
+    .item {
+      background-color: black;
+      color: #fafafa;
+      padding: 20px;
+      margin: 5px;
+      width: 60px;
+      height: 60px;
+      flex-grow: 1;
+
+    }
+
+    .article-01 {
+      flex-grow: 5;
+    }
+
+    .article-02 {
+      order: 1;
+    }
+
+    .article-03 {
+      order: 4;
+    }
+
+    .article-04 {
+      flex-grow: 10;
+    }
+
+    ;
+  </style>
+</body>
+
+</html>

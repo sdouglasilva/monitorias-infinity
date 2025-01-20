@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Uma lista de produtos que muda a direção de visualização (linha ou coluna) dependendo do dispositivo.</h1>
+  <div class="product-list">
+    <div class="product">Produto 1</div>
+    <div class="product">Produto 2</div>
+    <div class="product">Produto 3</div>
+  </div>
+  <style>
+    .product-list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .product {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .product-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</body>
+
+</html>

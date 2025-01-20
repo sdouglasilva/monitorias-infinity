@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> Uma barra de navegação com links alinhados ao centro, esquerda e direita.</h1>
+  <div class="navbar">
+    <div class="esquerda">Home</div>
+    <div class="center">About</div>
+    <div class="direita">Contact</div>
+  </div>
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+.esquerda, .centro, .direita {
+  flex: 1;
+  text-align: center;
+}
+
+</style>
+  
+  
+</body>
+</html>
